@@ -16,3 +16,4 @@ Mars.
 - Use typescript for type safety
 - Use a readable stream to read in chunks for improved performance with extra large files
 - Implement caching where applicable
+- Add a validation workflow using github actions
