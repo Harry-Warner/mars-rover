@@ -8,7 +8,7 @@ const FILE_ARG = "--file=";
 const args = process.argv.slice(2);  // Slice off first two elements
 let filePath = args.find(arg => arg.startsWith(FILE_ARG))?.slice(FILE_ARG.length);
 
-// If file is not provided, default to data.txt in the src directory
+// If file is not provided, default to data-large.txt in the src/data directory
 if (typeof filePath !== "string") {
     const __dirname = path.resolve();
     filePath = path.join(__dirname, "src/data", "data-large.txt");
