@@ -70,7 +70,7 @@ export const run = async (filePath) => {
     let fileContents = "";
     try {
         fileContents = await fs.readFileSync(filePath, "utf-8");
-;    } catch (err) {
+    } catch (err) {
         throw new Error("Error reading file: ", err);
     }
 
