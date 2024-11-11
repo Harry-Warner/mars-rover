@@ -3,13 +3,6 @@ import assert from "node:assert";
 import { moveRobot, run } from "./run.js";
 
 describe("run", () => {
-    const originalConsoleLog = console.log;
-    before(() => {
-        console.log = () => {};
-    });
-    after(() => {
-        console.log = originalConsoleLog;
-    });
     it("Should successfully run the program given a valid file - small", async () => {
         const filePath = "src/data/data-small.txt";
         const results = await run(filePath);
